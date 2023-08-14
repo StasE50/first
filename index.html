@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=1920px">
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +19,7 @@
 <body>
 
   <header class="header">
+    <div class="wrraper">
     <div class="flex-hederr">
       <div class="adres">
         <a href="#!" class="adres-link">Новокузнечный переулок 4/1</a>
@@ -42,6 +43,7 @@
         <samp>дегустация</samp>
       </button>
     </div>
+  </div>
   </header>
   <main class="main">
     <div class="beggin-bloc">
@@ -111,7 +113,31 @@
       </div>
       <div class="bottom-bloc">  
         <div class="bottom-bloc-ctnter">
-         
+          <div class="bottom-bloc-cinteiner-img">
+            <div class="conteiner-image1"><img src="Image/grape.png" alt=""></div>
+            <div class="conteiner-image2"><img src="Image/barrel.png" alt=""></div>
+          </div>    
+         <div class="bottom-bloc-content-top">
+          Запись на дегустацию
+         </div>
+         <hr class="bottom-bloc-line"></hr>
+         <div class="bottom-bloc-ctnter-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum.</div>
+      
+         <div class="bottom-bloc-ctnter-form">
+          <form method="post" action="/submit">
+            <input type="text" id="name" name="name" placeholder="Name" autocomplete="off" required >    
+            <input type="tel" id="phone" name="phone" placeholder="Phone" autocomplete="off" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required >     
+         <hr class="form-line1"></hr>
+         <hr class="form-line2"></hr>
+            <select id="street" name="street">
+              <option value="">Выберите улицу</option>
+          </select>
+          <hr class=""></hr>
+           <p><button type="submit" class="button-form" ><samp class="text-in-button">записаться</samp></button></p> 
+          </form>
+          
+        </div>
+        
         </div>
       </div>
       
@@ -127,9 +153,19 @@
   <li class="item-list1"><a href="#" class="item-ref-top">Коллекция 2020</a></li>
   <li class="item-list1"><a href="#" class="item-ref-top">Контакты</a></li>
 </ul>
+<ul class="top-list1 list2">
+  <li class="item-list1 bott"><a href="#" class="item-ref-bott">винный бутик LE CORTE</a></li>
+  <li class="item-list1 bott2"><a href="#" class="item-ref-bott">8 (812) 123-45-67</a></li>
+  <li class="item-list1 bott3"><a href="https://www.youtube.com/" target="_blank" class="item-ref-bot"><img src="Image/carbon_logo-youtube.png" alt=""></a>
+  <a  class="item-ref-bot" href=""><img src="Image/entypo-social_vk.png" target="_blank" alt=""></a>
+  <a  class="item-ref-bot " href=""><img src="Image/bx_bxl-facebook.png" target="_blank" alt=""></a>
+  </li>
+  <li class="item-list1 "><a href="#" class="item-ref-bott ds">© le-corte.ru</a></li>
+</ul>
     </nav>
     
   </footer>
   <script src="ss.js"></script>
 </body>
-</html>
+
+</html>    
